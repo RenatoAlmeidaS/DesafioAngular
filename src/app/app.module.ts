@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { IndexComponent } from './index/index.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LoginComponent } from './pages/login/login.component';
+import { IndexComponent } from './pages/index/index.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { InputComponent } from './components/input/input.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';

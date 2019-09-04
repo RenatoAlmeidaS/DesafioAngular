@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../service/auth.service';
+import { AuthService } from '../../service/auth.service';
 import { Router } from '@angular/router';
-import { HistoricService } from '../service/historic.service';
+import { HistoricService } from '../../service/historic.service';
 
 @Component({
   selector: 'app-index',
