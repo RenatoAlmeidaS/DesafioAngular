@@ -12,30 +12,13 @@
     img {
         margin-bottom: $spc_xlarge;
     }
+    app-login-form {
+        width: 100%;
+    }
     p:first-of-type{
         text-align: center;
         margin-top: $spc_default;
         margin-bottom:$spc_xlarge;
-    }
-    form {
-        width: 100%;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        div:first-of-type {
-            margin-bottom: $spc_large;
-        }
-        input {
-            height: 3.5rem;
-        }
-        button:first-of-type{
-            background-color:transparent;
-            margin: $spc_xlarge 0;
-        }
-        button:last-of-type{
-            width: 20.5rem;
-            
-        }
     }
     p:last-of-type {
         position: absolute;

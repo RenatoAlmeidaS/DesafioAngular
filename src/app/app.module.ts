@@ -7,13 +7,14 @@ import { LoginComponent } from './login/login.component';
 import { IndexComponent } from './index/index.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { InputComponent } from './login/input/input.component';
+import { InputComponent } from './components/input/input.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TittleComponent } from './components/tittle/tittle.component';
 import { ButtonRequestComponent } from './components/button-request/button-request.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { HistoricComponent } from './components/historic/historic.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { HistoricComponent } from './components/historic/historic.component';
     ButtonRequestComponent,
     SearchBarComponent,
     HistoricComponent,
+    LoginFormComponent,
   ],
   imports: [
     BrowserModule,
