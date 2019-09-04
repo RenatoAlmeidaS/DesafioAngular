@@ -1,1 +1,295 @@
-/* You can add global styles to this file, and also import other style files */
+$color_primary_light_appetit:#FEAC66;
+$color_primary_appetit:#FF8822;
+$color_primary_dark_appetit:#E5832E;
+
+$spc_small:.5rem;
+$spc_default: 1rem;
+$spc_xlarge: 2rem;
+$spc_large: 1.5rem;
+$spc_sxlarge: 2.5rem;
+html, body, input, p {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-color: #FAFAFA;
+}
+p{
+    background-color:transparent;
+}
+h1,h2,h3,h4,h5,h6,button {
+    color: rgba(0, 0, 0, 0.87); 
+    font-weight: normal;
+    margin: 0;
+}
+h1 {
+    font-size: 2.25rem;
+    line-height: 3.375rem;
+}
+h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+h3 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+}
+h4 {
+    font-size: 1.25rem;
+    line-height: 1.9375rem;
+}
+h5 {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+}
+h6{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+button {
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.375rem;
+    text-transform: uppercase;
+    outline: none;
+    border:none;
+    cursor:pointer;
+    transition: background-color .2s;
+    &:disabled {
+        background-color: $color_primary_light_appetit;
+        cursor: inherit;
+    }
+    padding: 0;
+}
+
+.caption {
+    font-size: .75rem;
+    line-height: 1.125rem;
+}
+
+//STYLEUSED
+
+.btn_flag_enabled {
+    height: 3rem;
+    width: 8rem;
+    background-color:$color_primary_appetit;
+    border-radius: 100px;
+    color:white;
+    &:hover {
+        background-color:$color_primary_dark_appetit;
+    }
+}
+
+.data_inputs {
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    background-color: white;
+    padding: 1rem;
+    outline: none;
+}
+
+.data_inputs_active {
+    border: 2px solid $color_primary_appetit;
+
+}
+
+.data_inputs_label {
+    position: absolute;
+    left: 1rem;
+    top: 30%;
+    transition: transform .2s;
+}
+
+.data_inputs_label_focus {
+    color:$color_primary_appetit;
+}
+
+.data_inputs_label_transform {
+    font-size: .75rem;
+    transform: translate(-.3rem, -112.5%);
+    background: linear-gradient(transparent 45%,white 45%, white 55%, transparent 55%);
+    padding: 0 .25rem;
+}
+
+
+.data_inputs_div {
+    position:relative;
+    width: 100%;
+}
+
+
+//SIDE MENU
+.sidenav {
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    width: 21.375rem;
+    background-color:$color_primary_appetit;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    color:white;
+    .logo {
+        margin-top: 3.5rem;
+        margin-bottom: 5rem;
+    }
+    div {
+        width: 100%;
+        nav {
+            text-transform: uppercase;
+            height: 3.5rem;
+            padding-left: $spc_xlarge;
+            display:flex;
+            align-items: center;
+            &:hover {
+                cursor: pointer;
+                opacity: .8;
+            }
+            p {
+                font-size: .875rem;
+                font-weight: 600;
+                color: white;
+            }
+            img {
+                padding-right: $spc_large;
+            }
+        }
+        .side_nav_option_selected {
+            background-color:white;
+            p {
+                color: $color_primary_appetit;
+            }
+        }
+        .side_sub_option {
+            box-sizing: border-box;
+            margin: 1.5rem 0;
+            margin-left: 3.5rem;
+            height: 1.25rem;
+            color: rgba(255, 255, 255, 0.54);
+            padding-left: $spc_default;
+        }
+        .side_sub_option_selected {
+            color:white;
+            border-left: 2px solid white;
+        }
+    }
+    .footer {
+        color: white;
+        position: absolute;
+        bottom: $spc_xlarge;
+        font-size: .75rem;
+    }
+}
+
+//PAGE
+
+.header {
+    height: 4.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    img {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 100px;
+    }
+}
+
+.title {
+    div {
+        height: 2px;
+        width: 14rem;
+        background-color: $color_primary_appetit;
+    }
+}
+
+.btn_request {
+    width: 100%;
+    background-color:white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    height: 3.5rem;
+    text-align: left;
+    margin: $spc_large 0;
+    color: rgba(0, 0, 0, 0.54);
+    display:flex;
+    align-items: center;
+    &:hover {
+        opacity: .8;
+    }
+    img{
+        padding: 0 1.25rem;
+    }
+}
+
+.search_bar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.34);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    input {
+        background:none;
+        border:none;
+        outline:none;
+        flex-grow: 1;
+    }
+    img {
+        margin: .5rem 0;
+        padding-right: .5rem;
+    }
+}
+
+.historic {
+    margin-top: $spc_large;
+    &:last-of-type {
+        margin-bottom: $spc_xlarge;
+    }
+    div {
+        margin-top:$spc_default;
+        mark {
+            @extend h6;
+            background-color: transparent;
+        }
+        .title {
+            margin-bottom: $spc_default;
+        }
+        nav {
+            background-color: white;
+            margin-bottom: $spc_small;
+            box-shadow: 0px 0.5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            display:flex;
+            justify-content: flex-start;
+            align-items:center;
+            &:hover {
+                cursor:pointer;
+                opacity: .8;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 100px;
+                margin: 0 $spc_default;
+            } 
+            div {
+                flex-grow: 1;
+                margin: 0;
+                height: 4.675rem;
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+            }
+            h6 {
+                margin-right: $spc_default;
+            }
+        }
+    }
+}

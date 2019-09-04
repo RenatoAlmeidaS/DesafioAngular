@@ -1,0 +1,21 @@
+<ng-container *ngFor='let data of (data$ | async)'>
+    <section class='historic'>
+        <div>
+            <p class='title'><mark>{{data.date}},</mark> Você vendeu <mark>{{currency(data.value)}}</mark></p>
+            <ng-container *ngFor='let h of data.requests'>
+                <nav>
+                    <img src='{{h.photo}}'>
+                    <div>
+                        <p>
+                            {{h.name}}
+                        </p>
+                        <p>
+                            {{h.request}}
+                        </p>
+                    </div>
+                    <h6>{{currency(h.value)}}</h6>
+                </nav>
+            </ng-container>
+        </div>
+    </section>
+</ng-container>

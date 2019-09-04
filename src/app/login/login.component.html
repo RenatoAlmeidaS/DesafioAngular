@@ -1,0 +1,18 @@
+<div class='container'>
+    <img src='assets/imgs/Logo.svg'>
+    <h3>Seja bem-vindo!</h3>
+    <p>Nós sabemos a importância de estar sempre de barriga cheia e o quanto isso pode ajudar no seu dia.</p>
+    <form (ngSubmit)='submit()' [formGroup]='form'>
+        <div [ngClass]='input_div'>
+            <label for='login' [ngClass]='input_label1'>Email</label>
+            <input id='login' name='login' formControlName='login' #login [ngClass]='input1' (click)='subs($event.target)'>
+        </div>
+        <div [ngClass]='input_div'>
+            <label for='password' [ngClass]='input_label2'>Senha</label>
+            <input id='password' name='password' type='password' formControlName='password' #pass [ngClass]='input2' (click)='subs($event.target)'>
+        </div>
+        <button>recuperar minha senha</button>
+        <button [disabled]='!form.valid' [ngClass]='btn'>enviar</button>
+    </form>
+    <p>Infoway Gestão em Saúde ©, 2019.</p>
+</div>
