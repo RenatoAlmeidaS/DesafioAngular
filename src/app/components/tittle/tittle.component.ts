@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { User } from 'src/app/models/user.model';
 import { AuthService } from 'src/app/service/auth.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-tittle',
@@ -9,12 +10,11 @@ import { AuthService } from 'src/app/service/auth.service';
 })
 export class TittleComponent implements OnInit {
 
-  constructor(private auth: AuthService) { }
-  user: User = null;
+  constructor() { }
+  
+  @Input()
+  user$:Observable<User> = null;
   ngOnInit() {
-    this.auth.getUser().subscribe((e)=> {
-      this.user = e;
-    })
   }
 
 }

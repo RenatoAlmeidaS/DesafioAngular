@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { AuthService } from 'src/app/service/auth.service';
 import { User } from 'src/app/models/user.model';
 import { Observable } from 'rxjs';
@@ -10,10 +10,10 @@ import { Observable } from 'rxjs';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private auth: AuthService) { }
-  user$:Observable<User>;
+  constructor() {}
+  @Input()
+  user$:Observable<User> = null;
   ngOnInit() {
-    this.user$ = this.auth.getUser();
   }
 
 }

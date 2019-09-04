@@ -129,6 +129,8 @@ button {
 .sidenav {
     height: 100vh;
     position: fixed;
+    top:0;
+    left: 0;
     z-index: 2;
     width: 21.375rem;
     background-color:$color_primary_appetit;

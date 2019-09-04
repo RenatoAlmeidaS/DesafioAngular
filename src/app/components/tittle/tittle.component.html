@@ -1,4 +1,4 @@
-<div class='title' *ngIf='user!==null'>
+<div class='title' *ngIf='(user$ | async) as user'>
     <h3>Olá {{user.name}}</h3>
     <div></div>
 </div>

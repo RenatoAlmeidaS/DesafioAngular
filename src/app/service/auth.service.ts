@@ -8,7 +8,7 @@ import { User } from '../models/user.model';
 export class AuthService {
 
   constructor() { }
-  isLogged$: BehaviorSubject<boolean> = new BehaviorSubject(false);
+  isLogged$: BehaviorSubject<boolean> = new BehaviorSubject(true);
   login$: BehaviorSubject<boolean> = new BehaviorSubject(false);
   user$: BehaviorSubject<User> = new BehaviorSubject(null);
 

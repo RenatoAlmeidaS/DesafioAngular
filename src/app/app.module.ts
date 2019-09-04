@@ -8,12 +8,12 @@ import { IndexComponent } from './index/index.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { InputComponent } from './login/input/input.component';
-import { SideNavComponent } from './index/side-nav/side-nav.component';
-import { HeaderComponent } from './index/header/header.component';
-import { TittleComponent } from './index/tittle/tittle.component';
-import { ButtonRequestComponent } from './index/button-request/button-request.component';
-import { SearchBarComponent } from './index/search-bar/search-bar.component';
-import { HistoricComponent } from './index/historic/historic.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { HeaderComponent } from './components/header/header.component';
+import { TittleComponent } from './components/tittle/tittle.component';
+import { ButtonRequestComponent } from './components/button-request/button-request.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { HistoricComponent } from './components/historic/historic.component';
 
 
 @NgModule({
